@@ -1,0 +1,82 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+font-size: 100%;
+	background: none;
+vertical-align: baseline;
+	text-decoration: none;
+}
+
+html {
+	position: relative;
+	height: 100%;
+	overflow: initial;
+
+	@media (hover: none) {
+			overflow: initial;
+	}
+}
+
+body {
+	position: relative;
+	height: 100%;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+a:hover, button:hover {
+	cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+	display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+div#root {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100dvh;
+}
